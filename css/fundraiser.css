@@ -1,0 +1,315 @@
+body {
+    padding: 50px;  
+  }
+  
+  .progress-bg {
+      margin: 0 auto;
+      width: 65%;
+      height: 78px;
+      border-radius: 10px;
+    text-align: center;
+      -moz-box-shadow:    inset 0 0 10px #ccc;
+      -webkit-box-shadow: inset 0 0 10px #ccc;
+      box-shadow:         inset 0 0 10px #ccc;
+  }
+  
+  .progress-bar {
+      height: 78px;
+      border-radius: 10px;
+      float: left;
+      width: 50%;
+      /* fallback */ 
+      background-color: #1c314a; 
+      
+      /* Safari 4-5, Chrome 1-9 */ 
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+      
+      /* Safari 5.1, Chrome 10+ */ 
+      background: -webkit-linear-gradient(top, #ff5722, #ff5722); 
+      
+      /* Firefox 3.6+ */ 
+      background: -moz-linear-gradient(top, #ff5722, #ff5722); 
+      
+      /* IE 10 */ 
+      background: -ms-linear-gradient(top, #ff5722, #ff5722); 
+      
+      /* Opera 11.10+ */ 
+      background: -o-linear-gradient(top, #ff5722, #ff5722);	
+  }
+  
+  .progress-bg h3.goal, .progress-bg h3.raised {
+      font-family: Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+      line-height: 78px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: inline;
+  }
+  
+  
+  .progress-bg h3.raised {
+      color: #fff;
+      margin: 14px 25px 0 50px;
+      padding: 0 25px 0 0;
+  }
+  
+  .progress-bg h3.goal {
+      color: #b2b2b2;
+    text-align: center;
+  }
+  
+  body .progress-bg h3.raised {
+      -webkit-animation: fadein 4s; /* Safari and Chrome */
+         -moz-animation: fadein 4s; /* Firefox */
+          -ms-animation: fadein 4s; /* Internet Explorer */
+           -o-animation: fadein 4s; /* Opera */
+              animation: fadein 4s;
+  }
+  
+  
+  
+  
+  .user-content1 {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .user-panel1 {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    min-height: 100%;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+  }
+  .user-panel-title {
+    color: #304073;
+  }
+  .user-panel-subtitle {
+    color: #6783b8;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  
+  .user-dashboard {
+    padding-top: 80px;
+  }
+  .user-box {
+    text-align: center;
+  }
+  
+  
+  .token-card {
+    border-radius: 6px;
+    background: #6783b8;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .token-info {
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px 10px 20px 50px;
+    position: relative;
+  }
+  .token-smartag {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    background: #00d285;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 30px;
+    min-width: 200px;
+    text-align: center;
+    top: 20px;
+    left: -60px;
+    transform: rotate(-45deg);
+  }
+  .token-bonus {
+    color: #fff;
+    margin-bottom: 14px;
+    padding-left: 25px;
+  }
+  .token-bonus span {
+    font-size: 0.5em;
+    color: #fff;
+  }
+  .token-timeline {
+    margin: 0 -16px;
+  }
+  .token-timeline li {
+    padding: 0 16px;
+    font-weight: 500;
+    display: inline-block;
+    color: #fff;
+  }
+  .token-timeline li span {
+    display: block;
+    font-weight: 600;
+    color: #87bfff;
+    line-height: 1;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .token-countdown {
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+  }
+  .token-countdown-title {
+    color: #87bfff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .token-countdown-clock {
+    display: flex;
+    color: #fff;
+  }
+  .token-countdown-clock .countdown-time {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+  }
+  .token-countdown-clock .countdown-text {
+    font-size: 12px;
+    line-height: 1;
+    display: block;
+  }
+  
+  @media (min-width: 576px) {
+    .token-info {
+      padding: 20px 30px 20px 110px;
+    }
+    .token-bonus {
+      padding-left: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    .token-info {
+      width: 58%;
+      flex-grow: 0;
+    }
+  }
+  .progress-card1 {
+    border-radius: 4px;
+    padding: 20px 15px;
+    border: 2px solid #dce6f5;
+  }
+  .progress-card h4 {
+    margin-bottom: 16px;
+  }
+  .progress-info1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress-info1 li {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .progress-info1 li span {
+    color: #304073;
+    font-weight: 400;
+  }
+  .progress-bar1 {
+    display: block;
+    color: #6783b8;
+    background: #6a88f8;
+    height: 6px;
+    border-radius: 3px;
+    margin: 15px 0 57px;
+    position: relative;
+  }
+  .progress-hcap1,
+  .progress-scap1,
+  .progress-psale1,
+  .progress-percent1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    border-radius: 3px;
+  }
+  .progress-hcap1 > div,
+  .progress-scap1 > div,
+  .progress-psale1 > div,
+  .progress-percent1 > div {
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    width: 120px;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 500;
+    padding: 30px 0 0 0;
+    text-transform: uppercase;
+  }
+  .progress-hcap1 > div:after,
+  .progress-scap1 > div:after,
+  .progress-psale1 > div:after,
+  .progress-percent1 > div:after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    width: 2px;
+    height: 28px;
+    content: "";
+    background: #deebff;
+  }
+  .progress-hcap1 > div span,
+  .progress-scap1 > div span,
+  .progress-psale1 > div span,
+  .progress-percent1 > div span {
+    display: block;
+    color: #77a1db;
+  }
+  .progress-hcap1 {
+    background: #8299d3;
+  }
+  .progress-scap1 {
+    background: #ff5722;
+  }
+  .progress-psale1 {
+    background: #8299d3;
+  }
+  .progress-percent1 {
+    background: #ff5722;
+  }
+  .progress-percent1:after {
+    position: absolute;
+    content: "";
+    right: -65px;
+    top: 50%;
+    height: 18px;
+    width: 18px;
+    border: 3px solid #ff5722;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+  }
+  
+  @media (min-width: 768px) {
+    .progress-card1 {
+      padding: 20px;
+    }
+    .progress-info1 li {
+      font-size: 14px;
+    }
+    .progress-hcap1 > div,
+    .progress-scap1 > div,
+    .progress-psale1 > div,
+    .progress-percent1 > div {
+      font-size: 11px;
+    }
+  }
+  
